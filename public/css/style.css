@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+header {
+    background-color: rgb(0, 132, 255);
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 3;
+}
+header nav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header p {
+    font-size: 32px;
+    color: #fff;
+    margin-top: 10px;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 4;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.overlay .overlay-message-wrapper {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 25%;
+    z-index: 5;
+    max-width: 500px;
+    padding: 30px;
+    margin: auto;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+.overlay .overlay-message-wrapper .long-message {
+    max-width: 650px !important;
+}
+.overlay .overlay-message-wrapper p {
+    font-size: 20px;
+    text-align: center;
+}
+.modal-btn-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.container {
+    padding-top: 80px;
+}
+.nav-buttons {
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+.nav-buttons img {
+    height: 50px !important;
+    width: 50px !important;
+    object-fit: cover;
+    margin-left: 10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.nav-info-wrapper {
+    display: flex;
+    align-items: center;
+}
+.nav-buttons-wrapper {
+    display: flex;
+    align-items: center;
+}
+.post-image {
+    height: 25px !important;
+    width: 25px !important;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.nav-buttons a, .nav-buttons form button {
+    margin-left: 50px;
+}
+.bg-info {
+    text-align: center;
+}
+.edit-profile-wrapper h1 {
+    text-align: center;
+}
+.edit-info-wrapper {
+    margin: 100px 0 100px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.edit-info-wrapper .item {
+    height: 50px;
+    width: 30%;
+}
+.single-form {
+    width: 50%;
+    text-align: center;
+}
+.single-form .item {
+    margin-top: 40px;
+}
+.edit-forms-buttons {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.current-img-wrapper button {
+    margin-top: 20px;
+}
+.edit-btn {
+    padding-top: 10px;
+}
+/* start dropzone styling */
+.dropzone {
+    border: none !important;
+    padding: 0 !important;
+    border-radius: 20px;
+}
+.current-img-wrapper {
+    height: 300px !important;
+    width: 300px;
+    position: relative;
+}
+.current-img-wrapper img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+.dropzone.dz-clickable {
+    height: 300px !important;
+    background: transparent !important;
+}
+.dropzone .dz-message .dz-button {
+    color: white !important;
+    background-color: black;
+}
+.dropzone .dz-preview .dz-image {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 300px !important;
+    height: 300px !important;
+}
+.dropzone .dz-preview.dz-image-preview {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 300px !important;
+    height: 300px !important;
+    margin: 0 !important;
+
+}
+.dropzone .dz-message {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+/* end dropzone styling */
+.form-links {
+    display: flex;
+    align-items: center;
+}
+.form-links a {
+    margin-left: 20px;
+}
+.single-form-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.delete-profile .single-form {
+    display: flex;
+    justify-content: start;
+    margin-top: 10px;
+}
+.forms-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.single-form {
+    width: 50%;
+    text-align: center;
+}
+.single-form .item {
+    margin-top: 40px;
+}
+.row h1 {
+    text-align: center;
+    font-size: 38px;
+    margin-top: 20px;
+}
+.post-form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.post-form textarea {
+    width: 80%;
+    height: 100px;
+    resize: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    background-color: whitesmoke;
+    border: 2px solid rgb(0, 132, 255);
+    border-right: none;
+    outline: none;
+}
+.delete-comment {
+    display: block !important;
+    width: auto;
+    text-align: end;   
+    margin-top: 10px;
+}
+.post-form button {
+    width: 20%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+}
+.single-post {
+    margin: 30px 0 30px 0;
+    border: 2px solid rgb(0, 132, 255);
+    padding: 10px;
+    border-radius: 10px;
+}
+.post-content {
+    font-size: 22px
+}
+.confirm-input {
+    max-width: 70%;
+    margin: 20px auto 20px auto;
+    text-align: center;
+}
+.comment-input {
+    width: 300px;
+    height: 32px;
+}
+.post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.post-comments {
+    display: none;
+    width: 50%;
+}
+.close-comments {
+    display: none;
+}
+.display {
+    display: block;
+}
+.post-comments form {
+    width: 100%;
+    display: flex;
+}
+.post-comment-btn {
+    margin-left: 10px;
+}
+.post-buttons {
+    display: flex;
+    height: 32px;
+}
+.post-buttons form {
+    height: auto;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.delete-post {
+    margin-left: 10px;
+}
+.fa-paper-plane {
+    font-size: 42px;
+    color: #fff;
+}
+.fa-thumbs-up, .fa-thumbs-down, .fa-comment-dots, .fa-comment-slash, .fa-trash, .paper-plane {
+    font-size: 20px;
+    color: #fff;
+}
+.fa-right-from-bracket, .fa-pencil {
+    font-size: 14px;
+    color: #fff;
+}
+/* responsive css */
+@media (max-width: 1200px) {
+    .edit-info-wrapper {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .current-img-wrapper {
+        margin-bottom: 100px;
+    }
+    .edit-info-wrapper .item {
+        margin-top: 10px;
+        width: 60%;
+    }
+}
+@media (max-width: 991px) {
+    .single-form, .delete-profile-form {
+        width: 100%;
+    }
+    .edit-info-wrapper .item {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .bg-info p {
+        margin-top: 15px;
+        font-size: 22px !important;
+    }
+    nav > p {
+        display: none;
+    }
+    nav p {
+        font-size: 16px;
+    }
+    .post-comments {
+        width: 100%;
+    }
+    .post-actions {
+        display: block;
+    }
+    .post-actions .post-buttons {
+        margin-top: 10px;
+    }
+    .delete-comment {
+        display: block;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+@media (max-width: 420px) {
+    .bg-info p {
+        margin-top: 20px;
+        font-size: 18px !important;
+    }
+    nav p {
+        font-size: 14px;
+    }
+    nav a button, nav form button {
+        font-size: 12px !important;
+    }
+    .nav-buttons {
+        justify-content: space-around;
+    }
+    .nav-buttons-wrapper a, .nav-buttons-wrapper form button {
+        margin: 5px !important;
+    }
+    .input-group-text {
+        font-size: 14px !important;
+    }
+}
